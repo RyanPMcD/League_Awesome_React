@@ -2,9 +2,12 @@
   "name": "League_Awesome",
   "version": "0.2.0",
   "description": "Fantasy Football site",
+  "repository": "git://github.com/RyanPMcD/League_Awesome_React",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack-dev-server --inline --progress --colors",
+    "other": "webpack ./entry/index.js bundle.js"
   },
   "author": "Ryan McDonald",
   "license": "ISC",
@@ -13,6 +16,14 @@
     "express": "^4.13.3",
     "lodash": "^4.0.0",
     "react": "~0.14.6",
+    "react-dom": "^0.14.6",
     "webpack": "^1.12.11"
+  },
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "webpack-dev-server": "^1.14.1"
   }
 }
