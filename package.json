@@ -1,0 +1,18 @@
+{
+  "name": "League_Awesome",
+  "version": "0.2.0",
+  "description": "Fantasy Football site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan McDonald",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.3.26",
+    "express": "^4.13.3",
+    "lodash": "^4.0.0",
+    "react": "~0.14.6",
+    "webpack": "^1.12.11"
+  }
+}
