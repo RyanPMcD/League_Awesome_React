@@ -1,0 +1,8 @@
+.league-menu {
+  display: flex;
+}
+
+.menu-items {
+  flex-direction: column;
+  align-content: space-around;
+}

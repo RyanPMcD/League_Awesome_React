@@ -6,18 +6,21 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack-dev-server --inline --progress --colors",
+    "webpack": "webpack-dev-server --progress --colors",
     "other": "webpack ./entry/index.js bundle.js"
   },
   "author": "Ryan McDonald",
   "license": "ISC",
   "dependencies": {
     "babel": "^6.3.26",
+    "css-loader": "^0.23.1",
     "express": "^4.13.3",
     "lodash": "^4.0.0",
     "react": "~0.14.6",
     "react-dom": "^0.14.6",
-    "webpack": "^1.12.11"
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.11",
+    "webpack-config": "^3.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.4.5",
