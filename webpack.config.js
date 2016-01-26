@@ -21,5 +21,5 @@ module.exports = {
         loader: ['style', 'css']
       }
     ]
-  },
+  }
 };
