@@ -17,15 +17,19 @@ export default class LeagueContainer extends React.Component {
           <ul className='menu-items'>
             <li>
               <span>League Name: {LeagueName}</span>
+              <div className='clear'></div>
             </li>
             <li>
               <span>League Size: {Size}</span>
+              <div className='clear'></div>
             </li>
             <li>
               <span>Sport: {Sport}</span>
+              <div className='clear'></div>
             </li>
             <li>
               <span>Season: {Season}</span>
+              <div className='clear'></div>
             </li>
           </ul>
         </div>

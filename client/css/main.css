@@ -51,20 +51,39 @@ table {
 
 h1 {
   padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+}
+.clear {
+  clear: both;
+}
+
+#main > div {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .league-menu {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-
-  -webkit-flex-flow: row wrap;
-  justify-content: space-between;
 }
 
-.menu-items {
-  text-align: center;
+.menu-items li {
+  padding: 5px 0px;
+}
+
+.menu-items li > span {
+  width: 100%;
+  display: block;
+}
+.menu-items li span > span:first-of-type{
+  width: 25%;
+  float: left;
+}
+.menu-items li span > span:last-of-type{
+  width: 75%;
+  float: left;
+}
+
+table{
+  margin-top: 25px;
+  width: 100%;
+  text-align: left;
 }
