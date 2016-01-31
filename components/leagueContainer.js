@@ -1,39 +1,30 @@
 import React from 'react';
-import League from './league';
 
 export default class LeagueContainer extends React.Component {
-  static get propTypes() {
-    return {
-      league: React.PropTypes.object
-    };
-  }
 
   render() {
-    const {LeagueId, LeagueName, Size, Sport, Season} = this.props.league;
-
     return (
       <section>
         <div className='league-menu'>
           <ul className='menu-items'>
             <li>
-              <span>League Name: {LeagueName}</span>
+              <span>League Name: </span>
               <div className='clear'></div>
             </li>
             <li>
-              <span>League Size: {Size}</span>
+              <span>League Size:</span>
               <div className='clear'></div>
             </li>
             <li>
-              <span>Sport: {Sport}</span>
+              <span>Sport:</span>
               <div className='clear'></div>
             </li>
             <li>
-              <span>Season: {Season}</span>
+              <span>Season:</span>
               <div className='clear'></div>
             </li>
           </ul>
         </div>
-        <League />
       </section>
     );
   }

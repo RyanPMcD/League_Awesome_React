@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var bourbon = require('node-bourbon').includePaths;
 
 module.exports = {
   devtool: '#source-map',
@@ -23,7 +24,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loaders: ["style", "css", "sass"]
+        loader: 'style!css!sass?includePaths[]=' + bourbon
       }
     ]
   }

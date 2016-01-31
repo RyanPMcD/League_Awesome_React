@@ -1,0 +1,148 @@
+@import 'bourbon';
+
+$orange-1: #ff6c00;
+$white: #fff;
+$green: #abe300;
+
+$medium: 978px;
+
+/* My Styles */
+
+body {
+  font: 500 14px 'Open Sans Condensed', sans-serif;
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #535254), color-stop(1, #1d1c1e) );
+  height: 100vh;
+}
+
+h1 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.clear {
+  clear: both;
+}
+
+#main {
+  > div {
+	  width: 96%;
+	  margin: 0 auto;
+  }
+}
+
+.lineup-card {
+	width: 28%;
+	margin: 1%;
+	float: left;
+	@media (max-width: $medium) {
+		width: 100%;
+		float: none;
+	}
+	h2 {
+		text-align: center;
+		color: $white;
+		font: 12px 'Open Sans', sans-serif;
+		margin: 5px;
+	}
+	tbody {
+		color: $white;
+		.p-name {
+			color: $green;
+		}
+	}
+}
+
+.player-picker {
+	width: 38%;
+	margin: 1%;
+	float: left;
+	height: 450px;
+	max-height: 450px;
+	overflow-y: scroll;
+	@media (max-width: $medium) {
+		width: 100%;
+		float: none;
+	}
+	.dk-grid {
+		color: #ccc;
+		position: relative;
+		.p-name {
+			color: $green;
+			&:hover {
+				text-decoration: underline;
+				cursor: pointer;
+			}
+		}
+		.plus {
+			width: 15px;
+			height: 19px;
+			margin-top: 2px;
+			cursor: pointer;
+			background: transparent url("https://www.draftkings.com/_assets/images/icons/lineups/plus.png") no-repeat 0 5px;
+		}
+	}
+}
+.timer {
+	h1 {
+		color: $white;
+		text-align: center;
+		font: 30px/14px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	}
+}
+
+.dk-grid {
+	border: 1px solid $orange-1;
+	width: 100%;
+}
+.dk-grid {
+	thead {
+		background: #191919;
+		color: #a0a492;
+	}
+	tbody {
+		tr{
+			background-color: #232323;
+			&:nth-child(odd) {
+				background-color: #2e2e2e;
+			}
+			&:hover {
+				background-color: #191919;
+			}
+		}
+	}
+	td {
+		height: 30px;
+	    padding: 0 12px 0 8px;
+	    vertical-align: middle;
+	    font: 12px/14px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	    &.pos {
+	    	color: #eee;
+	    }
+	}
+}
+
+.navbar {
+	height: 75px;
+	.logo {
+		background: url(https://www.draftkings.com/_raptor/images/dk-logo-new.png) no-repeat top left;
+		width: 132px;
+		height: 72px;
+		display: block;
+		position: absolute;
+		z-index: 99;
+		left: 3px;
+		top: 4px;
+	}
+	ul {
+		float: right;
+		li {
+			margin-top: 25px;
+			display: inline-block;
+			a {
+				color: $white;
+				padding: 20px 15px 0px 15px;
+				text-decoration: none;
+				font: 12px 'Open Sans', sans-serif;
+			}
+		}
+	}
+}
