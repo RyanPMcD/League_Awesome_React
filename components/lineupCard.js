@@ -11,7 +11,6 @@ export default class LineupCard extends React.Component {
   }
 
   findIndexByPosition(positions, position){
-    console.log(positions);
     for(let i=0;i<positions.length;i++){
       if(positions[i] == position){
         return i;
@@ -30,8 +29,11 @@ export default class LineupCard extends React.Component {
           movePlayers = {this.props.movePlayers} key = {i}/>
       );
     }
-    
+
+    let totalSalary = 0;
+
     if(myPlayers.length){
+      totalSalary = 0;
       for(let i = 0; i<myPlayers.length;i++){
         let idx = this.findIndexByPosition(positions, myPlayers[i].PositionName);
         rows[idx] = 
@@ -45,12 +47,15 @@ export default class LineupCard extends React.Component {
             id = {myPlayers[i].PlayerId}
             key = {i}
           />;
+        totalSalary += myPlayers[i].Salary;
       }
     }
+
 
     return (
       <section className="lineup-card">
         <h2>{title}</h2>
+        <h2>{'$' + totalSalary}</h2>
         <table className="dk-grid">
           <LineupHead/>
           <tbody>
