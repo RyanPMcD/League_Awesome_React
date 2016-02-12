@@ -1,9 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import LeagueContainer from './leagueContainer';
 import LeagueData from '../LeagueFixture';
 
-export default class MainContainer extends React.Component {
+export default class App extends React.Component {
   render() {
     return (
       <div>
@@ -13,5 +12,3 @@ export default class MainContainer extends React.Component {
     );
   }
 }
-
-ReactDOM.render(<MainContainer/>, document.getElementById('main'));

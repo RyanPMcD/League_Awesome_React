@@ -1,0 +1,28 @@
+$orange-1: #ff6c00;
+$white: #fff;
+$green: #abe300;
+
+$medium: 978px;
+
+/* My Styles */
+
+body {
+  font: 500 14px 'Open Sans Condensed', sans-serif;
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #535254), color-stop(1, #1d1c1e) );
+  height: 100vh;
+}
+
+h1 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.clear {
+  clear: both;
+}
+
+#main {
+  > div {
+    width: 96%;
+    margin: 0 auto;
+  }
+}

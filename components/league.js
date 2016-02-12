@@ -1,4 +1,6 @@
 import React from 'react';
+import TeamRows from './teamRows';
+import teamData from '../TeamFixture';
 
 export default class League extends React.Component {
 
@@ -18,6 +20,7 @@ export default class League extends React.Component {
             </th>
           </tr>
         </thead>
+        <TeamRows teams={teamData} />
       </table>
     );
   }
